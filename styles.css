@@ -97,3 +97,13 @@ transform: rotate(42deg);
   background: linear-gradient(to left,#f9f9f9,#e7e7e7);
 
 }
+
+.plate::after{
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  background: linear-gradient(rgba(0,0,0,0.2));
+}
