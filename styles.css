@@ -105,5 +105,6 @@ transform: rotate(42deg);
   left: 30px;
   right: 30px;
   bottom: 30px;
-  background: linear-gradient(rgba(0,0,0,0.2));
+  background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent,transparent);
+  border-radius: 50%;
 }
