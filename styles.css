@@ -85,3 +85,8 @@ transform: rotate(42deg);
   border-radius: 50%;
   box-shadow: 0 35px 35px rgba(0,0,0,0.2);
 }
+
+.plate::before{
+  content: '';
+  position: absolute;
+}
