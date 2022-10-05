@@ -73,3 +73,13 @@ border-radius: 50%;
 transform: rotate(42deg);
 
 }
+
+.plate{
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 200px;
+  background: linear-gradient(to right,#f9f9f9);
+}
