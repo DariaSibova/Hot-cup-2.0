@@ -20,7 +20,7 @@ body{
 
 .cup{
   position: relative;
-  width: 200px;
+  width: 280px;
   height: 300px;
   background: linear-gradient(to right,#f9f9f9,#d9d9d9);
   border-bottom-left-radius: 45%;
@@ -107,4 +107,46 @@ transform: rotate(42deg);
   bottom: 30px;
   background: radial-gradient(rgba(0,0,0,0.2) 25%, transparent,transparent);
   border-radius: 50%;
+}
+
+.vapour{
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.vapour span{
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 1px 50px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+
+}
+@keyframes animate{
+  0%{
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15%{
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(-150px) scaleX(5);
+  }
+  95%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(-300px) scaleX(10);
+  }
+
 }
